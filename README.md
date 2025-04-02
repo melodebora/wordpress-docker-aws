@@ -230,8 +230,11 @@ docker run -d --name wordpress -p 8080:80 \
 
 ---
 
-## **Conclusão**
-Agora, temos uma aplicação WordPress rodando em **Docker**, conectada ao **RDS (MySQL)**, armazenando arquivos estáticos no **EFS** e distribuindo tráfego via **Load Balancer**. 
+## 📌 Conclusão  
+A implantação do **WordPress** na **AWS** utilizando **Docker** e serviços gerenciados proporciona uma infraestrutura altamente escalável, segura e resiliente. O **RDS (MySQL)** garante um banco de dados otimizado, enquanto o **EFS** permite o armazenamento centralizado de arquivos, assegurando que múltiplas instâncias compartilhem os mesmos dados. O **ALB** melhora a disponibilidade e o desempenho da aplicação, distribuindo o tráfego de forma eficiente, enquanto o **Auto Scaling Group** ajusta automaticamente os recursos conforme a demanda. 
 
----
+Além disso, com a monitoração via **CloudWatch**, conseguimos acompanhar o desempenho do ambiente e responder rapidamente a qualquer necessidade de ajuste. Essa abordagem não apenas melhora a confiabilidade da aplicação, mas também otimiza custos ao escalar os recursos de acordo com o tráfego real. 
+
+Com essa infraestrutura, o **WordPress** está pronto para crescer junto com o seu projeto, garantindo alto desempenho, estabilidade e facilidade de gerenciamento. Agora, sua aplicação pode operar com eficiência em qualquer cenário! 🚀
+
 
