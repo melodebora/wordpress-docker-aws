@@ -79,7 +79,7 @@ Criar uma instância AWS EC2 com Docker, rodando WordPress, integrando serviços
 ![Image](https://github.com/user-attachments/assets/d4196bca-b512-4d36-8a9e-f1bb3876d0e1)
 
 
-## 🛠 1. Instalação e Configuração do Docker no EC2 - Manualmente 
+## 1. Instalação e Configuração do Docker no EC2 - Manualmente 
 
 ### **Passo 1: Criar a Instância EC2**
 - Criar uma instância **Amazon Linux 2023**
@@ -124,7 +124,7 @@ consultando a existencia do banco
 ![Image](https://github.com/user-attachments/assets/ee998f19-063e-4ade-b335-9f4c48b86a0e)
 ---
 
-## 🏗 2. Deploy do WordPress e RDS (MySQL)
+##  2. Deploy do WordPress e RDS (MySQL)
 
 ### **Passo 1: Criar um Banco de Dados RDS**
 - Criar um banco **MySQL RDS**
@@ -231,8 +231,7 @@ docker run -d --name wordpress -p 8080:80 \
 ---
 
 ## **Conclusão**
-Agora, temos uma aplicação WordPress rodando em **Docker**, conectada ao **RDS (MySQL)**, armazenando arquivos estáticos no **EFS** e distribuindo tráfego via **Load Balancer**. 🎉
+Agora, temos uma aplicação WordPress rodando em **Docker**, conectada ao **RDS (MySQL)**, armazenando arquivos estáticos no **EFS** e distribuindo tráfego via **Load Balancer**. 
 
 ---
 
-✍ **Criado por:** Débora de Melo Silva
