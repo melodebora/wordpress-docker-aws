@@ -32,23 +32,23 @@ Este guia detalha o processo de implantação do **WordPress** em uma instância
 
 ###  Linguagens: Bash e Markdown.
 
-✅ Criar **VPC**
+ - Criar **VPC**
 
-✅ Criar **Grupo de Segurança**
+ - Criar **Grupo de Segurança**
 
-✅ Criar **Banco de Dados RDS**
+- Criar **Banco de Dados RDS**
 
-✅ Criar **EC2**
+- Criar **EC2**
 
-✅ Instalar **Docker** na EC2  
+- Instalar **Docker** na EC2  
 
-✅ Rodar **WordPress** com banco **RDS (MySQL)**  
+- Rodar **WordPress** com banco **RDS (MySQL)**  
 
-✅ Configurar **EFS** para armazenar arquivos estáticos  
+- Configurar **EFS** para armazenar arquivos estáticos  
 
-✅ Criar **Load Balancer** e **Auto Scaling Group**  
+- Criar **Load Balancer** e **Auto Scaling Group**  
 
-✅ Implementar **CloudWatch** para monitoramento
+- Implementar **CloudWatch** para monitoramento
 
 
 ## 🎯 Objetivo
@@ -61,9 +61,42 @@ Criar uma instância AWS EC2 com Docker, rodando WordPress, integrando serviços
 
 ![Image](https://github.com/user-attachments/assets/c052653c-2e60-4652-9574-b7ba04ec3a65)
 
-✅ Criar **Grupo de Segurança**
+✅ Criar **Os Grupos de Segurança**
 
-![Image](https://github.com/user-attachments/assets/89e903f3-8364-407c-a4a5-09d13e242bc1)
+Aqui temos uma visão geral dos grupos utilizados no proceso:
+
+![Image](https://github.com/user-attachments/assets/f424115b-24c6-4dc0-9bc3-7a66e48269d3)
+
+
+✅ Criação do grupo de segurança do load balncer - suas entradas
+![Image](https://github.com/user-attachments/assets/f41c08f4-8538-401e-92a9-a294ba013322)
+
+✅ Criação do grupo de segurança do load balncer - suas saidas
+
+![Image](https://github.com/user-attachments/assets/129c68ca-7b66-4ef0-b3b9-a63a42a34123)
+
+✅ Criação do grupo de segurança das intancias EC2 - suas entradas
+
+![Image](https://github.com/user-attachments/assets/e2490cd8-9545-4ca6-956c-cc248ec6c0b9)
+
+✅ Criação do grupo de segurança das intancias EC2 - suas saidas
+
+![Image](https://github.com/user-attachments/assets/32af0a44-06f2-4f36-8176-0d520d83c7b2)
+
+✅ Criação do grupo de segurança do EFS - suas entradas
+![Image](https://github.com/user-attachments/assets/dccfe48b-acf6-4635-b41a-5334f4cae97f)
+
+✅ Criação do grupo de segurança do EFS - suas saidas
+
+![Image](https://github.com/user-attachments/assets/ebc37f1b-029d-40b7-8fbc-98eef473e956)
+
+✅ Criação do grupo de segurança do RDS - suas entradas
+
+![Image](https://github.com/user-attachments/assets/830214e3-04a3-484d-8a68-67fe77868378)
+
+✅ Criação do grupo de segurança do RDS - suas saidas
+
+![Image](https://github.com/user-attachments/assets/8d842805-f266-464f-b9e7-ae28ffec38d2)
 
 ✅ Criar **Banco de Dados RDS**
 
