@@ -4,6 +4,7 @@
 
 Este projeto tem como intuito detalhar o processo de implantação do **WordPress** em uma instância **EC2** na **AWS**, utilizando **Docker**. O objetivo é criar uma solução escalável, segura e de fácil manutenção, integrando diversos serviços da AWS.  
 
+
 ### **Vamos precisar configurar**  
 - **EC2 + Docker** → Para hospedar o WordPress  
 - **RDS (MySQL)** → Para armazenar os dados do site  
@@ -111,9 +112,9 @@ Aqui temos uma visão geral dos grupos utilizados no proceso:
 ✅ Criar **EC2** com **Amazon Linux 2023**  
 ![Image](https://github.com/user-attachments/assets/d4196bca-b512-4d36-8a9e-f1bb3876d0e1)
 
-# Acessando a nossa EC2 via SSH e Instalar Docker e Docker Compose Manualmente# Como Acessar a EC2 via SSH e Instalar Docker e Docker Compose Manualmente
+---
 
-# Como Acessar a EC2 via SSH e Instalar Docker e Docker Compose Manualmente
+# Acessando a nossa EC2 via SSH e Instalar Docker e Docker Compose Manualmente
 
 Após criar a instância EC2, siga os passos abaixo para acessar a instância via SSH e instalar o Docker e o Docker Compose manualmente, caso você não tenha utilizado o `userdata` para automatizar a instalação.
 
