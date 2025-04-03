@@ -112,15 +112,14 @@ Aqui temos uma visão geral dos grupos utilizados no proceso:
 ![Image](https://github.com/user-attachments/assets/d4196bca-b512-4d36-8a9e-f1bb3876d0e1)
 
 
-## 1. Instalação e Configuração do Docker no EC2 - Manualmente 
+## 1. Instalação e Configuração do Docker no EC2 - Realização de Modelo de Execução para Automação e Associação Auto Scalingo Group também:
+![Image](https://github.com/user-attachments/assets/f8330845-7ade-4ab9-9b2b-7a9743acd515)
+
+
 
 ### **Passo 1: Criar a Instância EC2**
 - Criar uma instância **Amazon Linux 2023**
-- Configurar **Security Groups**:
-  - Porta **8080** → Acesso ao WordPress
-  - Porta **3306** → Acesso ao MySQL (opcional, pode ser limitado ao Security Group)
-  - Porta **2049** → Acesso ao EFS
-  - Porta **22** → Acesso SSH
+
 ![Image](https://github.com/user-attachments/assets/dd8a7e6c-278a-4237-bf9a-d4dcd6fa1e0d)
 
 ### **Passo 2: Instalar Docker e Docker Compose manualmente no caso de não utilização do userdata**
