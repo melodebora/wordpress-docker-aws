@@ -337,6 +337,8 @@ COLOCAR PRINT AQUI DA SAIDA DO LB
 7. **Análise**  
    Revise as configurações antes de criar o grupo.
 ![Image](https://github.com/user-attachments/assets/3db35fc1-6337-4c77-9432-96eb2a7fdcda)
+![Image](https://github.com/user-attachments/assets/e8c9d819-1770-4587-89af-f1e705a0830b)
+
 ---
 
 ### Modelo de Execução
@@ -344,7 +346,9 @@ COLOCAR PRINT AQUI DA SAIDA DO LB
 - **Modelo de execução**: Selecione um modelo (ex.: `modelo-base`).
 - **Versão**: Escolha a versão (ex.: `Latest (3)`).
 - **Criar nova versão**: Adicione uma descrição se necessário.
+![Image](https://github.com/user-attachments/assets/0920be09-ac79-488b-9e60-b35855609aa3)
 
+![Image](https://github.com/user-attachments/assets/ba6e6a15-a272-4a73-af55-9e685751d677)
 
 
 ---
