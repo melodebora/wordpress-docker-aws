@@ -4,8 +4,8 @@
 
 Este projeto tem como intuito detalhar o processo de implantação do **WordPress** em uma instância **EC2** na **AWS**, utilizando **Docker**. O objetivo é criar uma solução escalável, segura e de fácil manutenção, integrando diversos serviços da AWS.  
 
+### **Vamos precisar configurar**
 
-### **Vamos precisar configurar**  
 - **EC2 + Docker** → Para hospedar o WordPress  
 - **RDS (MySQL)** → Para armazenar os dados do site  
 - **EFS (Elastic File System)** → Para manter arquivos compartilhados entre instâncias  
@@ -13,14 +13,16 @@ Este projeto tem como intuito detalhar o processo de implantação do **WordPres
 - **ASG (Auto Scaling Group)** → Para escalabilidade automática  
 - **CloudWatch** → Para monitoramento e logs  
 
-### **Principais Etapas:**  
+### **Principais Etapas:**
+
 1. **Configuração da instância EC2** e instalação do Docker  
 2. **Deploy do WordPress** com banco de dados RDS  
 3. **Integração com EFS** para armazenamento de arquivos  
 4. **Configuração do ALB** para balanceamento de carga  
 5. **Automação do escalonamento** com ASG  
 
-### Tecnologias Utilizadas  
+### **Tecnologias Utilizadas**
+
 - **GitHub** → Versionamento e documentação  
 - **AWS** → Infraestrutura em nuvem  
 - **Amazon Linux 2023 (AMI)** → Sistema operacional da instância  
@@ -31,25 +33,23 @@ Este projeto tem como intuito detalhar o processo de implantação do **WordPres
 - **Auto Scaling Group (ASG)** → Escalabilidade automática  
 - **CloudWatch** → Monitoramento e logs  
 
-###  Linguagens: Bash e Markdown.
+### **Linguagens:**
 
- - Criar **VPC**
+- **Bash**  
+- **Markdown**
 
- - Criar **Grupo de Segurança**
+### **Passos a seguir:**
 
-- Criar **Banco de Dados RDS**
+1. Criar **VPC**  
+2. Criar **Grupo de Segurança**  
+3. Criar **Banco de Dados RDS**  
+4. Criar **EC2**  
+5. Instalar **Docker** na EC2  
+6. Rodar **WordPress** com banco **RDS (MySQL)**  
+7. Configurar **EFS** para armazenar arquivos estáticos  
+8. Criar **Load Balancer** e **Auto Scaling Group**  
+9. Implementar **CloudWatch** para monitoramento
 
-- Criar **EC2**
-
-- Instalar **Docker** na EC2  
-
-- Rodar **WordPress** com banco **RDS (MySQL)**  
-
-- Configurar **EFS** para armazenar arquivos estáticos  
-
-- Criar **Load Balancer** e **Auto Scaling Group**  
-
-- Implementar **CloudWatch** para monitoramento
 
 
 ## 🎯 Objetivo
@@ -274,17 +274,15 @@ Eu configurei um sistema de arquivos Amazon EFS com o ID fs-0fc75c2af2c0ecf97 na
 - Criar um **EFS** na AWS
 - Anexar ao **Security Group** da EC2
 - Pegar o endpoint (ex: `fs-xxxxxx.efs.us-east-1.amazonaws.com`)
-![Image](https://github.com/user-attachments/assets/0751f2b1-d5b1-408b-9667-6b82024d2494)
 
-![Image](https://github.com/user-attachments/assets/8ba87fa1-d38e-44da-bdfe-38a8432b2cfe)
 
-### **Passo 2: Montar o EFS na Instância EC2**
+### **Passo 2: Montar o EFS na Instância EC2 em um cenario feito manualmente**
 ```sh
 sudo yum install -y amazon-efs-utils
 sudo mkdir -p /mnt/efs
 sudo mount -t efs fs-xxxxxx:/ /mnt/efs
 ```
-![Image](https://github.com/user-attachments/assets/8ba87fa1-d38e-44da-bdfe-38a8432b2cfe)
+
 Adicionar ao `/etc/fstab` para montagem automática:
 ```sh
 echo "fs-xxxxxx:/ /mnt/efs efs defaults,_netdev 0 0" | sudo tee -a /etc/fstab
@@ -294,8 +292,6 @@ Reiniciar para testar:
 ```sh
 sudo reboot
 ```
-
-![Image](https://github.com/user-attachments/assets/1e587cf0-4912-4e9c-91df-2fe8e247eee1)
 ---
 
 ## 4. Configuração do Load Balancer
@@ -307,6 +303,8 @@ Acesse pelo navegador usando o DNS do Load Balancer:
 
 ```
 http://SEU-LOAD-BALANCER-DNS
+
+COLOCAR PRINT AQUI DA SAIDA DO LB
 
 ```
 
