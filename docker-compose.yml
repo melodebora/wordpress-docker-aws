@@ -1,7 +1,6 @@
-version:
 services:
-  wordpress:
-    image: wordpress:latest
+  web:
+    image: wordpress
     restart: always
     ports:
       - "80:80"
@@ -12,3 +11,9 @@ services:
       WORDPRESS_DB_NAME: banco_wordpress_db
     volumes:
       - /wordpress:/var/www/html
+    networks:
+      - tunel
+
+networks:
+  tunel:
+    driver: bridge
