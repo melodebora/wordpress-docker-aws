@@ -2,7 +2,7 @@
 
 ## Introdução  
 
-Este guia detalha o processo de implantação do **WordPress** em uma instância **EC2** na **AWS**, utilizando **Docker**. O objetivo é criar uma solução escalável, segura e de fácil manutenção, integrando diversos serviços da AWS.  
+Este projeto tem como intuito detalhar o processo de implantação do **WordPress** em uma instância **EC2** na **AWS**, utilizando **Docker**. O objetivo é criar uma solução escalável, segura e de fácil manutenção, integrando diversos serviços da AWS.  
 
 ### **Vamos precisar configurar**  
 - **EC2 + Docker** → Para hospedar o WordPress  
