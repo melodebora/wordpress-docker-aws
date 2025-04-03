@@ -203,6 +203,10 @@ docker ps
 
 ## 3. Configurar AWS EFS para Armazenamento Estático
 
+Eu configurei um sistema de arquivos Amazon EFS com o ID fs-0fc75c2af2c0ecf97 na minha VPC wordpress-vpc. Criei dois destinos de montagem, um para cada zona de disponibilidade (us-east-1a e us-east-1b), e conectei minhas instâncias EC2 através de sub-redes específicas e o grupo de segurança EC2-sg. Assim, garanti que minhas instâncias EC2 possam acessar o EFS de forma segura e redundante.
+
+![Image](https://github.com/user-attachments/assets/42d42cb5-34bc-4a4f-9e82-d8bda48311e9)
+
 ### **Passo 1: Criar um EFS (Elastic File System)**
 - Criar um **EFS** na AWS
 - Anexar ao **Security Group** da EC2
@@ -233,15 +237,14 @@ sudo reboot
 
 ## 4. Configuração do Load Balancer
 
-### **Passo 1: Criar um Application Load Balancer (ALB)**
-- Criar um **ALB** na AWS
-- Criar um **Target Group** apontando para a EC2 na porta **8080**
-- Configurar **Regras do Listener** para encaminhar tráfego HTTP para o Target Group
+![Image](https://github.com/user-attachments/assets/f11ec79e-c862-46be-a341-b97de33c0619)
 
 ### **Passo 2: Testar o Acesso**
 Acesse pelo navegador usando o DNS do Load Balancer:
+
 ```
 http://SEU-LOAD-BALANCER-DNS
+
 ```
 
 ---
