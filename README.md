@@ -213,7 +213,7 @@ Ao realizar o processo as saidas que teremos inicialmente do acesso ao wordpress
 
 ![Image](https://github.com/user-attachments/assets/17e8d641-27e6-4859-ad70-e6f86532540a)
 
-![Image](https://github.com/user-attachments/assets/5aaf2762-e377-45ff-a569-09da001625a3)
+
 
 consultando a existencia do banco
 
