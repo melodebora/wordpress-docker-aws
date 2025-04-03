@@ -11,7 +11,4 @@ services:
       WORDPRESS_DB_PASSWORD: w38389938
       WORDPRESS_DB_NAME: banco_wordpress_db
     volumes:
-      - wordpress:/var/www/html
-
-volumes:
-  wordpress:
+      - /wordpress:/var/www/html
