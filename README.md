@@ -168,11 +168,9 @@ consultando a existencia do banco
 ### **Passo 2: Criar o Arquivo `docker-compose.yml`**
 
 ```yaml
-version: '3.8'
-
 services:
-  wordpress:
-    image: wordpress:latest
+  web:
+    image: wordpress
     restart: always
     ports:
       - "80:80"
@@ -182,10 +180,13 @@ services:
       WORDPRESS_DB_PASSWORD: w38389938
       WORDPRESS_DB_NAME: banco_wordpress_db
     volumes:
-      - wordpress:/var/www/html
+      - /wordpress:/var/www/html
+    networks:
+      - tunel
 
-volumes:
-  wordpress:
+networks:
+  tunel:
+    driver: bridge
 ```
 
 ### **Passo 3: Subir os Containers**
