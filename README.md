@@ -59,7 +59,7 @@ Criar uma instância AWS EC2 com Docker, rodando WordPress, integrando serviços
 
 ✅ Criar **VPC**
 
-![Image](https://github.com/user-attachments/assets/d0fe76b0-5c65-4647-88e5-8259e72be89a)
+![Image](https://github.com/user-attachments/assets/c052653c-2e60-4652-9574-b7ba04ec3a65)
 
 ✅ Criar **Grupo de Segurança**
 
