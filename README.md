@@ -19,7 +19,7 @@ Este projeto tem como intuito detalhar o processo de implantação do **WordPres
 4. **Configuração do ALB** para balanceamento de carga  
 5. **Automação do escalonamento** com ASG  
 
-## Tecnologias Utilizadas  
+### Tecnologias Utilizadas  
 - **GitHub** → Versionamento e documentação  
 - **AWS** → Infraestrutura em nuvem  
 - **Amazon Linux 2023 (AMI)** → Sistema operacional da instância  
