@@ -17,13 +17,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo mkdir -p /wordpress
 sudo mount -t efs -o tls fs-00d1605a6207546e8:/ /wordpress
 
-# Verifica se a montagem foi bem-sucedida
-if mountpoint -q /wordpress; then
-    echo "EFS montado com sucesso em /wordpress"
-else
-    echo "Falha ao montar EFS"
-fi
-
 # Baixa o arquivo docker-compose.yml do seu repositório
 wget -O /home/ec2-user/docker-compose.yml https://raw.githubusercontent.com/melodebora/wordpress-docker-aws/main/docker-compose.yml
 sudo chown ec2-user:ec2-user /home/ec2-user/docker-compose.yml
