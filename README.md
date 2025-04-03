@@ -320,21 +320,23 @@ COLOCAR PRINT AQUI DA SAIDA DO LB
    
 ![Image](https://github.com/user-attachments/assets/ab99f874-1da7-42c4-a419-61fcc090fb34)
 
-3. **(Opcional) Integrar com outros serviços**  
-   Integre com serviços como CloudWatch ou ELB.
-
+3. **Integrar com outros serviços**  
+   
+![Image](https://github.com/user-attachments/assets/aecf2f76-ac9f-4443-a4bc-725bdec0cd85)
+![Image](https://github.com/user-attachments/assets/9378d042-bd68-45c6-a75a-9627598fd8b4)
 4. **(Opcional) Configurar ajuste de escala**  
    Defina o número mínimo, máximo e desejado de instâncias.
-
+![Image](https://github.com/user-attachments/assets/639effdd-dc49-4c34-8f96-ae98e629b4a9)
+![Image](https://github.com/user-attachments/assets/af32dc31-f227-48e2-b11b-f30f65a57f16)
 5. **(Opcional) Adicionar notificações**  
    Configure alertas sobre eventos de Auto Scaling.
 
 6. **(Opcional) Adicionar etiquetas**  
    Organize os recursos com etiquetas.
-
+![Image](https://github.com/user-attachments/assets/96babdb2-c69b-4440-a5d6-630fd6e80447)
 7. **Análise**  
    Revise as configurações antes de criar o grupo.
-
+![Image](https://github.com/user-attachments/assets/3db35fc1-6337-4c77-9432-96eb2a7fdcda)
 ---
 
 ### Modelo de Execução
