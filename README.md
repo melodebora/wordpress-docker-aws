@@ -111,16 +111,78 @@ Aqui temos uma visão geral dos grupos utilizados no proceso:
 ✅ Criar **EC2** com **Amazon Linux 2023**  
 ![Image](https://github.com/user-attachments/assets/d4196bca-b512-4d36-8a9e-f1bb3876d0e1)
 
+# Acessando a nossa EC2 via SSH e Instalar Docker e Docker Compose Manualmente# Como Acessar a EC2 via SSH e Instalar Docker e Docker Compose Manualmente
 
-## 1. Instalação e Configuração do Docker no EC2 - Realização de Modelo de Execução para Automação e Associação Auto Scalingo Group também:
-![Image](https://github.com/user-attachments/assets/f8330845-7ade-4ab9-9b2b-7a9743acd515)
+# Como Acessar a EC2 via SSH e Instalar Docker e Docker Compose Manualmente
 
+Após criar a instância EC2, siga os passos abaixo para acessar a instância via SSH e instalar o Docker e o Docker Compose manualmente, caso você não tenha utilizado o `userdata` para automatizar a instalação.
 
+## Passo 1: Acessar a instância EC2 via SSH
 
-### **Passo 1: Criar a Instância EC2**
-- Criar uma instância **Amazon Linux 2023**
+1. Abra o terminal ou prompt de comando no seu computador.
+2. Conecte-se à instância EC2 utilizando o comando SSH, substituindo `seu-arquivo.pem` pela chave privada que você gerou ao criar a instância e `ec2-user@seu-ip-publico` pelo usuário e IP público da sua instância EC2:
 
-![Image](https://github.com/user-attachments/assets/dd8a7e6c-278a-4237-bf9a-d4dcd6fa1e0d)
+   ```bash
+   ssh -i /caminho/para/seu-arquivo.pem ec2-user@seu-ip-publico
+   ```
+
+## Passo 2: Instalar Docker e Docker Compose Manualmente
+
+Caso você não tenha utilizado o `userdata` para automatizar a instalação, siga os passos abaixo:
+
+1. Atualize os pacotes da instância EC2:
+
+   ```bash
+   sudo yum update -y
+   ```
+
+2. Instale o Docker:
+
+   ```bash
+   sudo yum install docker -y
+   ```
+
+3. Habilite o Docker para iniciar automaticamente no boot:
+
+   ```bash
+   sudo systemctl enable docker
+   ```
+
+4. Inicie o serviço Docker:
+
+   ```bash
+   sudo systemctl start docker
+   ```
+
+5. Adicione o usuário `ec2-user` ao grupo `docker` para permitir que o usuário execute comandos Docker sem precisar de privilégios de root:
+
+   ```bash
+   sudo usermod -aG docker ec2-user
+   ```
+
+6. Instale o Docker Compose:
+
+   ```bash
+   sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   sudo chmod +x /usr/local/bin/docker-compose
+   ```
+
+## Passo 3: Verificar a instalação
+
+Verifique se o Docker foi instalado corretamente:
+
+   ```bash
+   docker --version
+   ```
+
+Verifique a versão do Docker Compose:
+
+   ```bash
+   docker-compose --version
+   ```
+
+Agora você terá o Docker e o Docker Compose instalados na sua instância EC2, prontos para serem usados!
+
 
 ### **Passo 2: Instalar Docker e Docker Compose manualmente no caso de não utilização do userdata**
 
