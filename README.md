@@ -177,10 +177,10 @@ services:
     ports:
       - "80:80"
     environment:
-      WORDPRESS_DB_HOST: "banco-wordpress.c3mg2isyqjgp.us-east-1.rds.amazonaws.com"
-      WORDPRESS_DB_USER: "demelo"
-      WORDPRESS_DB_PASSWORD: "w38389938"
-      WORDPRESS_DB_NAME: "db_wordpress"
+      WORDPRESS_DB_HOST: db-wordpress.c3mg2isyqjgp.us-east-1.rds.amazonaws.com
+      WORDPRESS_DB_USER: demelo
+      WORDPRESS_DB_PASSWORD: w38389938
+      WORDPRESS_DB_NAME: banco_wordpress_db
     volumes:
       - wordpress:/var/www/html
 
