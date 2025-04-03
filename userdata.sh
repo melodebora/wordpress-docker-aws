@@ -15,7 +15,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # faço a montagem no Amazon EFS
 sudo mkdir -p /wordpress
-sudo mount -t efs -o tls fs-00d1605a6207546e8:/ /wordpress
+sudo mount -t efs -o tls fs-00d1605a6207546e8:/ /wordpress # realiza uma montagem do tipo bind
 
 # Baixa o arquivo docker-compose.yml do seu repositório
 wget -O /home/ec2-user/docker-compose.yml https://raw.githubusercontent.com/melodebora/wordpress-docker-aws/main/docker-compose.yml
