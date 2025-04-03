@@ -308,6 +308,43 @@ COLOCAR PRINT AQUI DA SAIDA DO LB
 
 ```
 
+## Etapas de Configuração do Auto Scaling
+
+1. **Escolher o modelo de execução**  
+   Defina o nome do grupo (ex.: `APRESENTAR-ASG`) e escolha um modelo de execução com configurações como AMI, tipo de instância, par de chaves e grupos de segurança.
+
+![Image](https://github.com/user-attachments/assets/8b88b607-e5a7-4621-9559-13bfbfafa541)
+
+2. **Opções de execução de instância**  
+   Selecione as opções adequadas para as instâncias EC2 do Auto Scaling.
+   
+![Image](https://github.com/user-attachments/assets/ab99f874-1da7-42c4-a419-61fcc090fb34)
+
+3. **(Opcional) Integrar com outros serviços**  
+   Integre com serviços como CloudWatch ou ELB.
+
+4. **(Opcional) Configurar ajuste de escala**  
+   Defina o número mínimo, máximo e desejado de instâncias.
+
+5. **(Opcional) Adicionar notificações**  
+   Configure alertas sobre eventos de Auto Scaling.
+
+6. **(Opcional) Adicionar etiquetas**  
+   Organize os recursos com etiquetas.
+
+7. **Análise**  
+   Revise as configurações antes de criar o grupo.
+
+---
+
+### Modelo de Execução
+
+- **Modelo de execução**: Selecione um modelo (ex.: `modelo-base`).
+- **Versão**: Escolha a versão (ex.: `Latest (3)`).
+- **Criar nova versão**: Adicione uma descrição se necessário.
+
+
+
 ---
 
 ## 5. Automação com `user_data.sh`
