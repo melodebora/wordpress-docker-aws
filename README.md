@@ -1,4 +1,4 @@
-# 🚀 Implantação de WordPress na AWS  
+# 🚀 Implantação de WordPress com Docker na AWS  
 
 ## Introdução  
 
