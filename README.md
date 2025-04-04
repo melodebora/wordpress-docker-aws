@@ -303,10 +303,21 @@ Acesse pelo navegador usando o DNS do Load Balancer:
 
 ```
 http://SEU-LOAD-BALANCER-DNS
-
-COLOCAR PRINT AQUI DA SAIDA DO LB
-
 ```
+
+![Image](https://github.com/user-attachments/assets/9f7a9fba-7750-4f3a-b437-b17f37a2ebea)
+
+![Image](https://github.com/user-attachments/assets/015dc5ff-b949-4cb8-8a87-a1f128b47f6a)
+
+![Image](https://github.com/user-attachments/assets/fba80f14-e7d7-4699-a583-1ccfee30d597)
+
+![Image](https://github.com/user-attachments/assets/ac806a4f-72fc-4f61-bafd-f03db82eff94)
+
+![Image](https://github.com/user-attachments/assets/b292e7e8-1378-4779-8273-6a8cd3573694)
+
+![Image](https://github.com/user-attachments/assets/dd46c125-5622-49de-8a2e-adce05ccb4ad)
+
+
 
 ## Etapas de Configuração do Auto Scaling
 
