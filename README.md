@@ -361,6 +361,15 @@ http://SEU-LOAD-BALANCER-DNS
 
 ![Image](https://github.com/user-attachments/assets/ba6e6a15-a272-4a73-af55-9e685751d677)
 
+Criar um CloudWatch baseado em um Auto Scaling Group envolve configurar o monitoramento das instâncias EC2 usando o CloudWatch, que coleta métricas como utilização de CPU. Alarmes podem ser criados para disparar ações, como adicionar ou remover instâncias, com base nessas métricas. Isso permite que o Auto Scaling Group ajuste automaticamente a escala de instâncias para atender à demanda, garantindo eficiência e otimização de recursos.
+
+![Image](https://github.com/user-attachments/assets/c3606c79-8e45-48a7-9347-ea2e4d737b4b)
+
+![Image](https://github.com/user-attachments/assets/f796df9d-6393-4f8e-bedc-dd4e06ebb691)
+
+![Image](https://github.com/user-attachments/assets/cf859d34-62e1-4264-9bc8-2bbaf0eba1c0)
+
+![Image](https://github.com/user-attachments/assets/5435e22e-0565-4a30-bc85-87d2bdd3d24b)
 
 ---
 
