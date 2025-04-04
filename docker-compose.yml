@@ -5,15 +5,15 @@ services:
     ports:
       - "80:80"
     environment:
-      WORDPRESS_DB_HOST: db-wordpress.c3mg2isyqjgp.us-east-1.rds.amazonaws.com
+      WORDPRESS_DB_HOST: dbwordpress.c3mg2isyqjgp.us-east-1.rds.amazonaws.com
       WORDPRESS_DB_USER: demelo
       WORDPRESS_DB_PASSWORD: w38389938
       WORDPRESS_DB_NAME: db_wordpress
     volumes:
       - /wordpress:/var/www/html
     networks:
-      - tunel
+      - rede
 
 networks:
-  tunel:
+  rede:
     driver: bridge
